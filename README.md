@@ -51,6 +51,7 @@ Usage: maildev [options]
 |`--base-pathname <path>`|`MAILDEV_BASE_PATHNAME`|base path for URLs|
 |`--disable-web`|`MAILDEV_DISABLE_WEB`|Disable the use of the web interface. Useful for unit testing|
 |`--hide-extensions <extensions>`|`MAILDEV_HIDE_EXTENSIONS`|Comma separated list of SMTP extensions to NOT advertise (SMTPUTF8, PIPELINING, 8BITMIME)|
+|`--mail-directory <path>`|`MAILDEV_PATH`|Mail directory for storing mails and attachements, defaults to os specific temp directory|
 |`-o, --open`||Open the Web GUI after startup|
 |`-v, --verbose`|||
 |`--silent`|||
