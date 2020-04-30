@@ -19,14 +19,13 @@ RUN apk add --no-cache curl \
 # Prod
 FROM base as prod
 
-RUN mkdir /maildev
-RUN chown -R 1000:1000 /maildev
-
 USER node
 WORKDIR /home/node
 
 COPY --chown=node:node . /home/node
 COPY --chown=node:node --from=build /root/node_modules /home/node/node_modules
+
+RUN mkdir /home/node/maildev
 
 EXPOSE 1080 1025
 
