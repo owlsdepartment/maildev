@@ -19,6 +19,9 @@ RUN apk add --no-cache curl \
 # Prod
 FROM base as prod
 
+RUN mkdir /maildev
+RUN chown -R 1000:1000 /maildev
+
 USER node
 WORKDIR /home/node
 
