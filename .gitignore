@@ -12,3 +12,4 @@ settings.json
 # Ignore npm debug log
 npm-debug.log
 .idea/
+docker-compose.yml
